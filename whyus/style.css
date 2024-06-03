@@ -52,6 +52,17 @@ p {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+.longline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.longline.visible {
+    opacity: 1;
+}
 
 .feature.visible {
   opacity: 1;

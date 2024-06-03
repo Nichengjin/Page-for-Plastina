@@ -534,11 +534,14 @@ input[type="text"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(246, 241, 241, 0.666); /* 设置背景颜色为半透明白色 */
-    backdrop-filter: blur(10px); /* 应用背景滤镜模糊效果 */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* 添加投影效果 */
+    background-color: rgba(255, 255, 255, 0.1);/* 设置背景颜色为半透明白色 */
+    backdrop-filter: blur(1px); /* 应用背景滤镜模糊效果 */
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 添加投影效果 */
     padding: 20px;
-    border-radius: 10px; /* 设置圆角边框 */
+    border-radius: 20px; /* 设置圆角边框 */
     z-index: 9999;
     display: none;
   }

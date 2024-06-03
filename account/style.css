@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Cormorant Garamond', serif; */
+    font-family: 'Lora', serif;
+    background-color: #f0e8d8;
+    color: #333;
+}
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    z-index: -1;
+}
+
+.bg-item {
+    position: absolute;
+    /* transition: transform 0.3s; */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+        .login-container {
+            position: absolute;
+            justify-content: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1s ease-in-out;
+            display:flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-family: 'Palatino', sans-serif;
+            /* font-family: 'Ideal Sans', sans-serif; */
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 20px;
+            transition: opacity 1s ease-in-out, text-shadow 0.3s;
+            padding: 30px;
+            text-align: center;
+            /* backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+        }
+        h2 {
+            margin: 0 0 30px;
+            color: #000;
+            text-align: center;
+            animation: slideInDown 1s ease-in-out;
+        }
+        .input-box {
+            position: relative;
+        }
+        .input-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #d7d5ca;
+            outline: none;
+            background: transparent;
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+        }
+        .input-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            letter-spacing: 1px;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #424141;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .input-box input:focus ~ label,
+        .input-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #7B4D3A;
+            font-size: 12px;
+        }
+        /* input {
+            padding: 0.8rem 1.5rem;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.3);
+            font-family: 'Lora', sans-serif;
+            color: #040303;
+            font-size: 1rem;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                        0 1px 3px rgba(0, 0, 0, 0.08), 
+                        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        input:hover {
+            background: #eca587;
+        } */
+        input[type="submit"] {
+            padding: 0.8rem 1.5rem;
+            display: block;
+            margin: 0 auto;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.3);
+            font-family: 'Lora', sans-serif;
+            color: #040303;
+            font-size: 1rem;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                        0 1px 3px rgba(0, 0, 0, 0.08), 
+                        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #eca587;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.3);
+            font-family: 'Lora', sans-serif;
+            color: #040303;
+            font-size: 1rem;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                        0 1px 3px rgba(0, 0, 0, 0.08), 
+                        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: background 0.3s, box-shadow 0.3s;
+          }
+          button:hover {
+            background: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                        0 1px 3px rgba(0, 0, 0, 0.08), 
+                        inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+          }
+          .links {
+            text-align: center;
+            margin-bottom: 1px;
+            margin-top: 20px;
+          }
+          
+          .link {
+            display: inline-block;
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+          }
+          
+          .link:hover {
+            color: #7B4D3A;
+          }
